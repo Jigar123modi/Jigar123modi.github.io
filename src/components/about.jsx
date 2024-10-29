@@ -19,10 +19,10 @@ function About() {
       </div>
       <div className="profile-content">
         <div className="profile-details">
-          <h1>VICKY MODI</h1>
+          <h1>JIGAR MODI</h1>
           <h2>A Bit About Me</h2>
           <p style={{ textAlign: "justify", display: "flex" }}>
-            I’m Vicky, your tech guru by day and a dedicated husband all the
+            I’m Jigar, your tech guru by day and a dedicated husband all the
             time! I’ve been coding up a storm, but my latest project? Mastering
             husband life! I’ve gone from tackling complex algorithms to solving
             the mystery of “what’s for dinner.” <br />I bring my signature

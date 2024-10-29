@@ -44,13 +44,15 @@
       "Implemented order processing and validating flow.",
       "Implemented offer/coupon flow."
     ],
-    "project": [1]
+    "project": [
+      1
+    ]
   },
   {
     "id": 2,
     "designation": "Senior/Lead Full Stack Developer (Remote)",
     "name": "Freelance",
-    "url": "https://vickymoditech.github.io/#/projects",
+    "url": "https://Jigar123modi.github.io/#/projects",
     "date": "April 2017 – April 2021",
     "skills": [
       "Javascript",
@@ -111,7 +113,14 @@
       "Financial and Budget Management",
       "Ensuring Compliance and Security"
     ],
-    "project": [2, 3, 4, 5, 6, 7]
+    "project": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
   },
   {
     "id": 3,
@@ -173,7 +182,9 @@
       "Collaborated with team members to find better, more efficient ways of doing things.",
       "Provided technical expertise."
     ],
-    "project": [2]
+    "project": [
+      2
+    ]
   },
   {
     "id": 4,
@@ -215,6 +226,8 @@
       "Built APIs, implemented business requirements, and conducted software quality testing.",
       "Managed the full lifecycle of applications, from deployment to maintenance, and handled security measures."
     ],
-    "project": [2]
+    "project": [
+      2
+    ]
   }
 ]

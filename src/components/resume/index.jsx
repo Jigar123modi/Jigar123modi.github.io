@@ -55,7 +55,7 @@ const Resume = () => {
     // Configure options for html2pdf
     const options = {
       margin: 0,
-      filename: "Vicky_Modi.pdf",
+      filename: "Jigar_Modi.pdf",
       image: { type: "jpeg", quality: 0.98 },
       html2canvas: { scale: 2 },
       jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
@@ -99,8 +99,8 @@ const Resume = () => {
                     <i className="fa fa-envelope"></i>
                   </div>
                   <div className="data">
-                    <a href="mailto:vickymoditech@gmail.com">
-                      vickymoditech@gmail.com
+                    <a href="mailto:11mscit074@gmail.com@gmail.com">
+                      11mscit074@gmail.com
                     </a>
                   </div>
                 </li>
@@ -110,11 +110,11 @@ const Resume = () => {
                   </div>
                   <div className="data">
                     <a
-                      href="https://vickymoditech.github.io"
+                      href="https://Jigar123modi.github.io"
                       rel="noreferrer"
                       target="_blank"
                     >
-                      vickymoditech.github.io
+                      Jigar123modi.github.io
                     </a>
                   </div>
                 </li>
@@ -227,46 +227,6 @@ const Resume = () => {
                     <div className="skill_per">{s.year} years</div>
                   </li>
                 ))}
-              </ul>
-            </div>
-
-            <div className="resume_item resume_social">
-              <div className="title" style={{ paddingBottom: "10px" }}>
-                <p className="bold">Social</p>
-              </div>
-              <ul>
-                <li>
-                  <div className="icon">
-                    <i className="fab fa-github"></i>
-                  </div>
-                  <div className="data">
-                    <p>
-                      <a
-                        rel="noreferrer"
-                        target="_blank"
-                        href="https://github.com/vickymoditech/"
-                      >
-                        github.com/vickymoditech
-                      </a>
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div className="icon">
-                    <i className="fab fa-linkedin"></i>
-                  </div>
-                  <div className="data">
-                    <p>
-                      <a
-                        rel="noreferrer"
-                        target="_blank"
-                        href="https://www.linkedin.com/in/vicky-modi-a01885186"
-                      >
-                        vickymodi@linkedin
-                      </a>
-                    </p>
-                  </div>
-                </li>
               </ul>
             </div>
           </SideBar>
