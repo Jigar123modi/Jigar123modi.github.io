@@ -20,8 +20,8 @@ jobs:
 
       - name: Configure Git User
         run: |
-          git config --global user.email "vickymoditech@gmail.com"
-          git config --global user.name "Vicky Modi"
+          git config --global user.email "11mscit074@gmail.com"
+          git config --global user.name "Jigar Modi"
 
       - name: Install dependencies
         run: npm install
@@ -35,4 +35,4 @@ jobs:
       - name: Deploy application
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use GitHub token for authentication
-        run: gh-pages -d build --repo https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/vickymoditech/vickymoditech.github.io.git
+        run: gh-pages -d build --repo https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/jigar123modi/jigar123modi.github.io.git
