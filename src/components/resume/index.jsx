@@ -154,7 +154,7 @@ const Resume = () => {
                   <div className="skill_border"></div>
                 </li>
 
-                {skill.slice(17, 24).map((s) => (
+                {skill.slice(16, 24).map((s) => (
                   <li>
                     <div className="skill_name">{s.name}</div>
                     <div className="skill_per">{s.year} years</div>
@@ -229,6 +229,46 @@ const Resume = () => {
                 ))}
               </ul>
             </div>
+
+            {/* <div className="resume_item resume_social">
+              <div className="title" style={{ paddingBottom: "10px" }}>
+                <p className="bold">Social123</p>
+              </div>
+              <ul>
+                <li>
+                  <div className="icon">
+                    <i className="fab fa-github"></i>
+                  </div>
+                  <div className="data">
+                    <p>
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://github.com/vickymoditech/"
+                      >
+                        github.com/vickymoditech
+                      </a>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div className="icon">
+                    <i className="fab fa-linkedin"></i>
+                  </div>
+                  <div className="data">
+                    <p>
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://www.linkedin.com/in/vicky-modi-a01885186"
+                      >
+                        vickymodi@linkedin
+                      </a>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div> */}
           </SideBar>
 
           <div className="resume_right">
@@ -300,6 +340,16 @@ const Resume = () => {
           <div className="resume_right">
             <div className="resume_item resume_work">
               <Project projects={[...projects.slice(9, 11)]} />
+            </div>
+          </div>
+        </Page>
+
+        <Page>
+          <SideBar />
+
+          <div className="resume_right">
+            <div className="resume_item resume_work">
+              <Project projects={[...projects.slice(11, 13)]} />
             </div>
 
             <div className="resume_item resume_education">
