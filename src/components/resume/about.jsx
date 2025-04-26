@@ -1,55 +1,75 @@
 import React, { Fragment } from "react";
 
-const style = {
-  skill_divider: {
-    gap: "20px",
-    marginTop: "25px",
-  },
-  gap_20: {
-    gap: "20px",
-  },
-  profile_margin: {
-    marginBottom: 0,
-  },
-  skill_style: {
-    marginTop: "3px",
-    marginBottom: "3px",
-    color: "#FFA500",
-  },
-  margin_50: {
-    marginTop: "50px",
-  },
-  margin_30: {
-    marginTop: "30px",
-  },
-  paddingLeft_50: {
-    paddingLeft: "50px",
-  },
-  list_style: {
-    marginBottom: "15px",
-  },
-  subheading: {
-    fontWeight: "bold",
-  },
-};
+// const style = {
+//   skill_divider: {
+//     gap: "20px",
+//     marginTop: "25px",
+//   },
+//   gap_20: {
+//     gap: "20px",
+//   },
+//   profile_margin: {
+//     marginBottom: 0,
+//   },
+//   skill_style: {
+//     marginTop: "3px",
+//     marginBottom: "3px",
+//     color: "#FFA500",
+//   },
+//   margin_50: {
+//     marginTop: "50px",
+//   },
+//   margin_30: {
+//     marginTop: "30px",
+//   },
+//   paddingLeft_50: {
+//     paddingLeft: "50px",
+//   },
+//   list_style: {
+//     marginBottom: "15px",
+//   },
+//   subheading: {
+//     fontWeight: "bold",
+//   },
+// };
 
 const About = () => {
   return (
     <Fragment>
-      {/* name */}
-      <div className="resume_item1 resume_about">
-        <div className="title profile_title">
-          <p className="profile_name">Jigar Modi</p>
-          <p style={style.subheading}>Full Stack Developer</p>
+      <div class="headers">
+        <div>
+        <h1 class="name">Jigar Modi</h1>
+        <p class="title">Senior Full-Stack Developer</p>
+        </div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span><i class="fa-solid fa-phone"></i></span>
+            <span><a href="tel:+918401060120">+91 8401060120</a></span>
+          </div>
+          <div class="contact-item">
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <span> <a href="mailto:11mscit074@gmail.com">
+            11mscit074@gmail.com
+                    </a></span>
+          </div>
+          <div class="contact-item">
+            <span><i class="fa-solid fa-link"></i></span>
+            <span>
+              <a
+                href="https://jigar123modi.github.io/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                jigar123modi.github.io
+              </a>
+            </span>
+          </div>
         </div>
       </div>
 
-      {/* about me */}
-      <div className="resume_item resume_about">
-        <div className="title">
-          <p className="bold">About Me</p>
-        </div>
-        <p className="top-padding">
+      <div class="section">
+        <h2 class="section-header">About Me</h2>
+        <p>
           I'm a Senior Full Stack Developer with 6+ years of experience building
           web and mobile apps that scale. I work with javaScript, typescript,
           Node.js, React.js, AWS serverless lambda, and Python and I’m great

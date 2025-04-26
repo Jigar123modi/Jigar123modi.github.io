@@ -3,45 +3,45 @@ import React, { Fragment, useEffect } from "react";
 import Company from "./company";
 import Page from "./page";
 import About from "./about";
-import SideBar from "./side";
+// import SideBar from "./side";
 import company from "../../data/company.json";
 import projects from "../../data/projects.json";
 import skill from "../../data/skills.json";
 import Project from "./project";
 import "./resume.css";
 
-const style = {
-  skill_divider: {
-    gap: "20px",
-    marginTop: "25px",
-  },
-  gap_20: {
-    gap: "20px",
-  },
-  profile_margin: {
-    marginBottom: 0,
-  },
-  skill_style: {
-    marginTop: "3px",
-    marginBottom: "3px",
-    color: "#FFA500",
-  },
-  margin_50: {
-    marginTop: "50px",
-  },
-  margin_30: {
-    marginTop: "30px",
-  },
-  paddingLeft_50: {
-    paddingLeft: "50px",
-  },
-  list_style: {
-    marginBottom: "15px",
-  },
-  subheading: {
-    fontWeight: "bold",
-  },
-};
+// const style = {
+//   skill_divider: {
+//     gap: "20px",
+//     marginTop: "25px",
+//   },
+//   gap_20: {
+//     gap: "20px",
+//   },
+//   profile_margin: {
+//     marginBottom: 0,
+//   },
+//   skill_style: {
+//     marginTop: "3px",
+//     marginBottom: "3px",
+//     color: "#FFA500",
+//   },
+//   margin_50: {
+//     marginTop: "50px",
+//   },
+//   margin_30: {
+//     marginTop: "30px",
+//   },
+//   paddingLeft_50: {
+//     paddingLeft: "50px",
+//   },
+//   list_style: {
+//     marginBottom: "15px",
+//   },
+//   subheading: {
+//     fontWeight: "bold",
+//   },
+// };
 
 const Resume = () => {
   useEffect(() => {
@@ -67,9 +67,215 @@ const Resume = () => {
 
   return (
     <Fragment>
-      <div id="content">
-        {/* page 1 */}
+      <div id="content" style={{display: "flex", flexDirection: "column", gap: "5px"}}>
         <Page>
+          <About />
+          <div class="section">
+            <h2 class="section-header">Work Experience</h2>
+            {company.slice(0, 1).map((c, index) => (
+              <Company company={c} key={index} />
+            ))}
+          </div>
+        </Page>
+
+        <Page>
+          <div class="section">
+            {/* <h2 class="section-header">Work Experience</h2> */}
+            {company.slice(1, 2).map((c, index) => (
+              <Company company={c} key={index} />
+            ))}
+          </div>
+        </Page>
+
+        <Page>
+          <div class="section">
+            {/* <h2 class="section-header">Work Experience</h2> */}
+            {company.slice(2, 3).map((c, index) => (
+              <Company company={c} key={index} />
+            ))}
+          </div>
+        </Page>
+
+        <Page>
+          <div class="section">
+            {/* <h2 class="section-header">Work Experience</h2> */}
+            {company.slice(3, 4).map((c, index) => (
+              <Company company={c} key={index} />
+            ))}
+          </div>
+          <div class="section">
+            <h2 class="section-header">Projects</h2>
+            <Project projects={[...projects.slice(0, 1)]} />
+          </div>
+        </Page>
+
+        <Page>
+          <div class="section">
+            {/* <h2 class="section-header">Projects</h2> */}
+            <Project projects={[...projects.slice(1, 5)]} />
+          </div>
+        </Page>
+
+        <Page>
+          <div class="section">
+            {/* <h2 class="section-header">Projects</h2> */}
+            <Project projects={[...projects.slice(5, 9)]} />
+          </div>
+        </Page>
+
+        <Page>
+          <div class="section">
+            {/* <h2 class="section-header">Projects</h2> */}
+            <Project projects={[...projects.slice(9, 12)]} />
+          </div>
+        </Page>
+
+        <Page>
+          <div class="section">
+            {/* <h2 class="section-header">Projects</h2> */}
+            <Project projects={[...projects.slice(12, 13)]} />
+          </div>
+
+          <div class="section">
+            <h2 class="section-header">EDUCATION</h2>
+
+            <div class="education-item">
+              <h3 class="degree">
+                Master of Science in Information Technology (MSC IT)
+              </h3>
+              <p class="school">UKA TARSADIA UNIVERSITY</p>
+              <p class="education-years">Sep 2012 - Oct 2017</p>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2 class="section-header">SKILLS</h2>
+
+            <div class="skills-lists">
+              <div className="main_skill">Databases&nbsp;:</div>
+              <div class="skills-list">
+                {skill.slice(0, 7).map((s) => (
+                  <span class="skill">
+                    <span>{s.name}</span>
+                    <span> {s.year} years</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div class="skills-lists">
+              <div className="main_skill">Back-end&nbsp;:</div>
+              <div class="skills-list">
+                {skill.slice(8, 16).map((s) => (
+                  <span class="skill">
+                    <span>{s.name}</span>
+                    <span> {s.year} years</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Page>
+
+        <Page>
+          <div class="section">
+            <h2 class="section-header">SKILLS</h2>
+
+            <div class="skills-lists">
+              <div className="main_skill">Front-end&nbsp;:</div>
+              <div class="skills-list">
+                {skill.slice(16, 27).map((s) => (
+                  <span class="skill">
+                    <span>{s.name}</span>
+                    <span> {s.year} years</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div class="skills-lists">
+              <div className="main_skill">AWS&nbsp;:</div>
+              <div class="skills-list">
+                {skill.slice(27, 37).map((s) => (
+                  <span class="skill">
+                    <span>{s.name}</span>
+                    <span> {s.year} years</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div class="skills-lists">
+              <div className="main_skill">Payment Integration&nbsp;:</div>
+              <div class="skills-list">
+                {skill.slice(37, 39).map((s) => (
+                  <span class="skill">
+                    <span>{s.name}</span>
+                    <span> {s.year} years</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div class="skills-lists">
+              <div className="main_skill">Extra&nbsp;:</div>
+              <div class="skills-list">
+                {skill.slice(39, 50).map((s) => (
+                  <span class="skill">
+                    <span>{s.name}</span>
+                    <span> {s.year} years</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+          {/* <div class="section">
+            <h2 class="section-header">Social</h2>
+
+            <div class="contact-info" style={{ flexDirection: "row" }}>
+              <div class="contact-item">
+                <span>
+                  <i class="fa-brands fa-github"></i>
+                </span>
+                <span>
+                  {" "}
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://github.com/vickymoditech/"
+                  >
+                    github.com/vickymoditech
+                  </a>
+                </span>
+              </div>
+              <div class="contact-item">
+                <span>
+                  <i class="fa-brands fa-linkedin"></i>
+                </span>
+                <span>
+                  {" "}
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/vicky-modi-a01885186"
+                  >
+                    vickymodi@linkedin
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div> */}
+        </Page>
+
+        {/* <div class="footer">
+          <span>www.enhancv.com</span>
+          <span>Powered by Enhancv</span>
+        </div> */}
+      </div>
+
+      <div>
+        {/* page 1 */}
+        {/* <Page>
           <SideBar>
             <div className="resume_item resume_info">
               <div className="title" style={{ paddingBottom: "10px" }}>
@@ -110,7 +316,7 @@ const Resume = () => {
                   </div>
                   <div className="data">
                     <a
-                      href="https://jigar123modi.github.io"
+                      href="https://jigar123modi.github.io/"
                       rel="noreferrer"
                       target="_blank"
                     >
@@ -178,10 +384,10 @@ const Resume = () => {
               </div>
             </div>
           </div>
-        </Page>
+        </Page> */}
 
         {/* page 2 */}
-        <Page>
+        {/* <Page>
           <SideBar>
             <div className="resume_item resume_skills">
               <ul>
@@ -230,9 +436,9 @@ const Resume = () => {
               </ul>
             </div>
 
-            {/* <div className="resume_item resume_social">
+            <div className="resume_item resume_social">
               <div className="title" style={{ paddingBottom: "10px" }}>
-                <p className="bold">Social123</p>
+                <p className="bold">Social</p>
               </div>
               <ul>
                 <li>
@@ -268,7 +474,7 @@ const Resume = () => {
                   </div>
                 </li>
               </ul>
-            </div> */}
+            </div>
           </SideBar>
 
           <div className="resume_right">
@@ -280,10 +486,10 @@ const Resume = () => {
               </div>
             </div>
           </div>
-        </Page>
+        </Page> */}
 
         {/* page 3 */}
-        <Page>
+        {/* <Page>
           <SideBar />
           <div className="resume_right">
             <div className="resume_item resume_work">
@@ -294,10 +500,10 @@ const Resume = () => {
               </div>
             </div>
           </div>
-        </Page>
+        </Page> */}
 
         {/* page 4 */}
-        <Page>
+        {/* <Page>
           <SideBar />
 
           <div className="resume_right">
@@ -309,21 +515,32 @@ const Resume = () => {
               <Project projects={[...projects.slice(0, 2)]} />
             </div>
           </div>
-        </Page>
+        </Page> */}
 
         {/* page 5 */}
-        <Page>
+        {/* <Page>
           <SideBar />
 
           <div className="resume_right">
             <div className="resume_item resume_work">
-              <Project projects={[...projects.slice(2, 6)]} />
+              <Project projects={[...projects.slice(0, 3)]} />
             </div>
           </div>
-        </Page>
+        </Page> */}
 
         {/* page 6 */}
-        <Page>
+        {/* <Page>
+          <SideBar />
+
+          <div className="resume_right">
+            <div className="resume_item resume_work">
+              <Project projects={[...projects.slice(3, 6)]} />
+            </div>
+          </div>
+        </Page> */}
+
+        {/* page 7 */}
+        {/* <Page>
           <SideBar />
 
           <div className="resume_right">
@@ -331,25 +548,14 @@ const Resume = () => {
               <Project projects={[...projects.slice(6, 9)]} />
             </div>
           </div>
-        </Page>
+        </Page> */}
 
-        {/* page 7 */}
-        <Page>
+        {/* <Page>
           <SideBar />
 
           <div className="resume_right">
             <div className="resume_item resume_work">
-              <Project projects={[...projects.slice(9, 11)]} />
-            </div>
-          </div>
-        </Page>
-
-        <Page>
-          <SideBar />
-
-          <div className="resume_right">
-            <div className="resume_item resume_work">
-              <Project projects={[...projects.slice(11, 13)]} />
+              <Project projects={[...projects.slice(9, 12)]} />
             </div>
 
             <div className="resume_item resume_education">
@@ -369,7 +575,34 @@ const Resume = () => {
               </ul>
             </div>
           </div>
-        </Page>
+        </Page> */}
+
+        {/* <Page>
+          <SideBar />
+
+          <div className="resume_right">
+            <div className="resume_item resume_work">
+              <Project projects={[...projects.slice(12, 13)]} />
+            </div>
+
+            <div className="resume_item resume_education">
+              <div className="title">
+                <p className="bold">Education</p>
+              </div>
+              <ul>
+                <li>
+                  <div className="date">Sep 2012 - Oct 2017</div>
+                  <div className="info">
+                    <p className="semi-bold">
+                      Master of Science in Information Technology (MSC IT)
+                    </p>
+                    <p>UKA TARSADIA UNIVERSITY</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </Page> */}
       </div>
       <button className="download" onClick={pdfDownload}>
         <i id="download-btn" className="fa-sharp fa-solid fa-circle-down"></i>

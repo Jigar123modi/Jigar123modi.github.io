@@ -17,6 +17,28 @@ function Footer() {
             <a href="mailto:11mscit074@gmail.com">11mscit074@gmail.com</a>
           </p>
         </div>
+        {/* <div className="footer-social">
+          <p>Follow Me</p>
+          <div className="social-logo">
+            <a
+              href="https://www.linkedin.com/in/vicky-modi-a01885186"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i
+                style={{ color: "#000", fontSize: "25px" }}
+                className="fab fa-linkedin"
+              ></i>
+            </a>
+            <a
+              href="https://github.com/vickymoditech/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i style={{ color: "#000", fontSize: "25px" }} className="fab fa-github"></i>
+            </a>
+          </div>
+        </div> */}
       </div>
     </footer>
   );
